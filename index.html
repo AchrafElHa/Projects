@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Convert your Image to Ascii art !
+</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+</head>
+<body>
+<div id="main_container">
+<input type="file" id="image_upload" name="image_upload" accept=".jpg, .jpeg, .png" multiple>
+<div id="radio">
+<input type="radio" id="white_radio" name="background_color" value="white">
+<label>white</label><br>
+<input type="radio" id="black_radio" name="background_color" value="black">
+<label>black</label><br>
+</div>
+<div id="buttons">
+<button onclick="upload()">Submit !</button>
+<button onclick="convert()">Convert !</button>
+</div>
+</div>
+</body>
+</html>
