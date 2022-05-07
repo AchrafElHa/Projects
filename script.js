@@ -1,7 +1,8 @@
 function setup() {
   canvas = createCanvas(400, 400);
   background(220);
-  canvas.parent('main_container');
+  canvas.parent('canvas');
+  canvas.style("margin","0.5vw");
 }
 var imageObject ;
 function upload(){
