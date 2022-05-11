@@ -1,1 +1,0 @@
-This is a tool to convert your image to an ascii Art , enjoy it !
