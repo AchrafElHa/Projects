@@ -25,21 +25,23 @@ Convert your Image to Ascii art !
  '----------------' '----------------' '----------------' '----------------' '----------------'   '----------------' '----------------' '----------------' 
 </pre>
 </header>
-<div id="canvas"><div id="radio">
+<div id="canvas">
 <div id="side_menu">
 <p>Choose background color :</p>
-<input type="radio" id="white_radio" name="background_color" value="white">
+<div>
+<input type="radio" id="white_radio" name="background_color" value="white" checked>
 <label>white</label><br>
 <input type="radio" id="black_radio" name="background_color" value="black">
 <label>black</label><br>
-<p>Choose letter size :</p>
 </div>
-</div>
-</div>
-<div id="buttons">
+<label>Choose letter size :</label>
+<input type="range" id="range_button" name="vol" min="3" max="10">
+<hr style="color:white;width:70%;">
+<label>Select a file to upload</label>
 <input type="file" style="display: block;" id="image_upload" name="image_upload" accept=".jpg, .jpeg, .png" multiple>
-<button onclick="upload()">Submit !</button>
-<button onclick="convert()">Convert !</button>
+<button onclick="upload()">Upload !</button>
+<button onclick="convert()" id="convert_button">Convert !</button>
+</div>
 </div>
 </div>
 </body>

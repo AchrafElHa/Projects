@@ -9,13 +9,37 @@
 	box-shadow: 0px 0px 24px #5C5696;
 	
 }
+#side_menu{
+	display : flex; 
+	flex-direction: column;
+	align-items:start ;
+	
+	
+}
+header{
+	color: white;
+}
 #canvas{
 	display: flex;
 	flex-direction :row;
-	align-items: start;
+	
 }
-#buttons{
-	text-align: center;
+button{
+	text-align :center;
+	background: #fff;
+	font-size: 10px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 80%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+}
+#convert_button{
+	display : none ;
 }
 body {
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);
